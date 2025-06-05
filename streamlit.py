@@ -3,13 +3,13 @@ from github import Github
 import json
 import hashlib
 
-# GitHub access token — you will need to create a personal access token and add here
-
+# Load from Streamlit secrets
 GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 REPO_NAME = st.secrets["REPO_NAME"]
 
 g = Github(GITHUB_TOKEN)
 repo = g.get_repo(REPO_NAME)
+
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
