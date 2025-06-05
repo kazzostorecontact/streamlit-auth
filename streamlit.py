@@ -5,7 +5,8 @@ import hashlib
 
 # GitHub access token — you will need to create a personal access token and add here
 GITHUB_TOKEN = 'your_github_token_here'
-REPO_NAME = 'your_username/your_repo'  # replace with your GitHub repo
+REPO_NAME = 'kazzostorecontact/streamlit-auth'
+
 
 g = Github(GITHUB_TOKEN)
 repo = g.get_repo(REPO_NAME)
