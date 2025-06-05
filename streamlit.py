@@ -4,7 +4,7 @@ import json
 import hashlib
 
 # GitHub access token — you will need to create a personal access token and add here
-GITHUB_TOKEN = 'your_github_token_here'
+GITHUB_TOKEN = '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'
 REPO_NAME = 'kazzostorecontact/streamlit-auth'
 
 
